@@ -115,7 +115,7 @@ Write a function "cutString" to create a new string without the first and last c
 */
 
 const cutString = function(string){
-    return string.slice(1, -2)
+    return string.slice(1, -1)
 }
 
 /* WRITE YOUR CODE HERE */
@@ -133,4 +133,4 @@ const giveMeRandom = function(n){
 
 /* WHEN YOU ARE FINISHED
 Commit and push the code to your personal GitHub repository and share the link to your commit in Eduflow.
-*/
+*/ 
