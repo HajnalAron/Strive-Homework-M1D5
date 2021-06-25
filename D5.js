@@ -61,6 +61,7 @@ Write a function "strivify" which accepts a string.
 It should add the word "Strive" in front of the given string, but if the given string already begins with "Strive", then it should just return the original string.
 */
 
+
 /* WRITE YOUR CODE HERE */
 
 /* EXERCISE 6
@@ -68,6 +69,15 @@ Write a function "check3and7" which accepts a positive number and check if it is
 HINT: Module Operator
 */
 
+const check3and7 = function (n){
+    if (n % 3 === 0) {
+        return true
+    }
+    else if (n % 7 === 0){
+        return true
+    }
+    else return false
+}
 /* WRITE YOUR CODE HERE */
 
 /* EXERCISE 7
