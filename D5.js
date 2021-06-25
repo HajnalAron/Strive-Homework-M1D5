@@ -10,7 +10,7 @@ ASSIGNMENT RULES
 Write a function "area" which receives 2 parameters (l1,l2) and calculates the area of the associated rectangle.
 */
 
-function area(l1, l2){
+const area = function(l1, l2){
     let calculatedArea = l1*l2
     return calculatedArea
 }
@@ -19,7 +19,7 @@ function area(l1, l2){
 Write a function "crazySum" which receives two integers. It should return the sum of those two values, but if the two values are the same then it should return their sum multiplied by 3.
 */
 
-function crazySum(n1, n2){
+const crazySum = function(n1, n2){
     if (n1 === n2){
         return (n1+n2)*3
     }
@@ -27,10 +27,19 @@ function crazySum(n1, n2){
     return n1 + n2
 }
 
+console.log(crazySum(1, 2))
+
 /* EXERCISE 3
 Write a function "crazyDiff" that computes the absolute difference between a given number and 19. 
 It should return triple their absolute difference if the given number is greater than 19.
 */
+
+const crazyDiff = function(n){
+    if (n>19){
+        return (n - 19)*3
+    }
+    else return n - 19
+}
 
 /* EXERCISE 4
 Write a function "boundary" which accept an integer n and returns true if n is within 20 and 100 (included) or if it's equal to 400.
