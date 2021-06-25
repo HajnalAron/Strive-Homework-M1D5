@@ -11,8 +11,7 @@ Write a function "area" which receives 2 parameters (l1,l2) and calculates the a
 */
 
 const area = function(l1, l2){
-    let calculatedArea = l1*l2
-    return calculatedArea
+   return l1*l2
 }
 
 /* EXERCISE 2
@@ -26,8 +25,6 @@ const crazySum = function(n1, n2){
     else 
     return n1 + n2
 }
-
-console.log(crazySum(1, 2))
 
 /* EXERCISE 3
 Write a function "crazyDiff" that computes the absolute difference between a given number and 19. 
@@ -52,6 +49,8 @@ const boundary = function(n){
     else if (n === 400){
         return true
     }
+    else 
+        return false
 }
 
 /* WRITE YOUR CODE HERE */
@@ -100,6 +99,17 @@ const reverseString = function(string){
 Write a function "upperFirst" to capitalize the first letter of each word of a given string passed as a parameter.
 */
 
+const upperFirst = function(string){
+    let charactersOfTheInput = [string[0].toUpperCase()]
+    for (let i = 1; i < string.length -1; i++){
+        let currentCharacter
+        let previousCharacter = input[i - 1];
+        if 
+    }
+    
+}
+
+
 /* WRITE YOUR CODE HERE */
 
 /* EXERCISE 9
@@ -115,6 +125,11 @@ const cutString = function(string){
 /* EXERCISE 10
 Write a function "giveMeRandom" which accepts a number n and returns an array containing n random numbers between 0 and 10.
 */
+
+const giveMeRandom = function(n){
+    let arrayOfRN = Array.from({length: n}, () => Math.floor(Math.random() * 10));
+    return arrayOfRN
+}
 
 /* WRITE YOUR CODE HERE */
 
