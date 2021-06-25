@@ -33,9 +33,9 @@ It should return triple their absolute difference if the given number is greater
 
 const crazyDiff = function(n){
     if (n>19){
-        return (n - 19)*3
+        return Math.abs(n-19)*3
     }
-    else return n - 19
+    else return Math.abs(n-19)
 }
 
 /* EXERCISE 4
@@ -99,17 +99,15 @@ const reverseString = function(string){
 Write a function "upperFirst" to capitalize the first letter of each word of a given string passed as a parameter.
 */
 
-const upperFirst = function(string){
-    let charactersOfTheInput = [string[0].toUpperCase()]
-    for (let i = 1; i < string.length -1; i++){
-        let currentCharacter
-        let previousCharacter = input[i - 1];
-        if 
-    }
-    
+const upperFirst = function (string) {
+    let splitString = string.toLowerCase().split(' ');
+    for (var i = 0; i < splitString.length; i++) {
+            splitString[i] = splitString[i].charAt(0).toUpperCase() + splitString[i].substring(1);     
+   }
+   return splitString.join(' '); 
 }
 
-
+  
 /* WRITE YOUR CODE HERE */
 
 /* EXERCISE 9
