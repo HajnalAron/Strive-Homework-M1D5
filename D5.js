@@ -125,9 +125,10 @@ Write a function "giveMeRandom" which accepts a number n and returns an array co
 */
 
 const giveMeRandom = function(n){
-    let arrayOfRN = Array.from({length: n}, () => Math.floor(Math.random() * 10));
+    let arrayOfRN = Array.from({length: n}, () => Math.floor(Math.random() * 11));
     return arrayOfRN
 }
+
 
 /* WRITE YOUR CODE HERE */
 
