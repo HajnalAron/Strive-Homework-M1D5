@@ -9,6 +9,21 @@ The function returns the sum of the numbers bigger than 5.
 In your eCommerce you have an array of objects called shoppingCart. In this array you have a number of objects with a price, a name, an id and the quantity to be shipped.
 Create a function "shippingCartTotal" which calculates the total due to the shop.
 */
+let shoppingCart = [
+    {price: 50, id: "A13546", product: "Wireless Keyboard", quantity: 1 },
+    {price: 2,  id: "A13548", product: "Red Bull 500ml", quantity: 10 },
+    {price: 40,  id: "A13551", product: "HD Webcam", quantity: 1 },
+]
+let total = 0
+const shippingCartTotal = function() {
+    for (let i = 0; i < shoppingCart.length; i++){
+        total += shoppingCart[i].price * shoppingCart[i].quantity
+    }
+} 
+shippingCartTotal()
+console.log(total)
+
+
 
 /* WRITE YOUR CODE HERE */
 
@@ -16,7 +31,15 @@ Create a function "shippingCartTotal" which calculates the total due to the shop
 In your eCommerce you have an array of objects called shoppingCart. In this array you have a number of objects with a price, a name, an id and the quantity to be shipped.
 Create a function "addToShoppingCart" which receives a new object, adds it to shoppingCart and returns the total number of items in the shoppingCart.
 */
-
+]
+let totalItems = 0
+const addToShoppingCart = function() {
+    for (let i = 0; i < shoppingCart.length; i++){
+        total += shoppingCart[i].quantity
+    }
+}
+addToShoppingCart()
+console.log(totalItems)
 /* WRITE YOUR CODE HERE */
 
 /* EXERCISE 14
